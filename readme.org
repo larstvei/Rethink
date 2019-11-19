@@ -1,3 +1,5 @@
+* This my fork of https://github.com/jessekelly881/Rethink
+
 * What is Rethink?
 
 Imagine is a single page theme designed for org mode exports. It currently supports latex, code blocks, lists, and tables.
