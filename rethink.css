@@ -9,7 +9,6 @@
 
     --font-size-small: 0.8rem;
     --font-size-xsmall: 0.6rem;
-
 }
 
 /* Set padding and margin */
@@ -20,11 +19,6 @@ html, body{
     background-color: #fdfdfd;
 }
 
-/* Header margin */
-h2{margin-top: 2rem; margin-bottom: 1.5rem;}
-h3{margin-top: 1rem; margin-bottom: 1rem;}
-h4{margin-top: 1rem; margin-bottom: 1rem;}
-
 /* ------------------------- */
 
 ::selection {
@@ -34,9 +28,12 @@ h4{margin-top: 1rem; margin-bottom: 1rem;}
 
 html, body{
     font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-weight: 300;
+	font-weight: 300;
+    max-width: 65ch;
+    margin: auto;
+    padding: 1ex;
+    font-size: 25px;
 }
-
 
 h1{font-size: var(--font-size-1);}
 h2{font-size: var(--font-size-2);}
@@ -97,38 +94,6 @@ pre{
     font-size: var(--font-size-small) !important;
 }
 
-
-.outline-3{
-    display: grid;
-    grid-template-columns: 40fr 60fr;
-}
-
- /* Responsive content positioning */
-@media only screen and (min-width: 750px) /* Large screens */
-{
-    .outline-3{
-        margin: 0vh 10vw;
-    }
-
-    .outline-text-2, #table-of-contents{
-        padding: 0vh 10vw;
-    }
-
-}
-
-@media only screen and (max-width: 750px) /* Small screens */
-{
-    .outline-3{
-        margin: 0vh 5vw;
-        display: block;
-    }
-
-    .outline-text-2, #table-of-contents{
-        padding: 0vh 5vw;
-    }
-}
-
-
 blockquote{
     border-left: 0.2rem solid purple;
     padding-left: 1rem;
@@ -173,7 +138,7 @@ tr:nth-child(even) {
 }
 
 .title{
-   padding: 2vh 5vw;
+    text-align: center;
 }
 
 pre{
@@ -224,4 +189,8 @@ a{
 .outline-text-2, .outline-text-3, .outline-text-4{
 	max-width: 100%;
 	overflow-x: auto;
+}
+
+.blur {
+    filter: blur(5px);
 }
