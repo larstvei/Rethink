@@ -194,3 +194,8 @@ a{
 .blur {
     filter: blur(5px);
 }
+
+div.figure p {
+    text-align: center;
+}
+
